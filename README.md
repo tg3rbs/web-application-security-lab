@@ -160,3 +160,34 @@ lab environment.
 - https://owasp.org/www-project-juice-shop/
 - https://portswigger.net/burp
 - https://docs.docker.com/
+
+## Phase 2: Authentication and Security Analysis
+
+### Authentication Testing
+
+Conducted six authentication input tests using Burp
+Suite Repeater, comparing server responses and evaluating
+input validation and exception handling.
+
+### Security Analysis
+
+- Analyzed HTTP security headers.
+- Identified JWT-based authentication using RS256.
+- Examined authentication response structures.
+- Identified sensitive data within the JWT payload.
+- Documented security observations and recommendations.
+
+### Detailed Findings
+
+- [Authentication Testing](findings/authentication-testing.md)
+- [Security Analysis](findings/security-analysis.md)
+
+### Additional Evidence
+
+- [Baseline Authentication](screenshots/04-baseline-authentication.png)
+- [Malformed Input](screenshots/05-malformed-input.png)
+- [Boolean Test](screenshots/06-boolean-test.png)
+- [Modified Email](screenshots/07-modified-email.png)
+- [Empty Email](screenshots/08-empty-email.png)
+- [Empty Password](screenshots/09-empty-password.png)
+- [JWT Authentication](screenshots/10-jwt-authentication.png)
